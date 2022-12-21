@@ -61,7 +61,6 @@ public class AdaTwitter {
         }
     }
 
-
     public static int loginUsuario(Usuario[] arrayUsuarios) {
 
         System.out.println("========= LOGIN =========");
@@ -123,7 +122,7 @@ public class AdaTwitter {
                 tweet.mensagem = mensagem;
                 tweet.user = user.usuario;
                 tweet.data_hora = data_hora;
-                timeline[contador] = Tweet.tweet(tweet);
+                timeline[contador] = tweet.tweet();
                 System.out.println("TWEET PUBLICADO COM SUCESSO!");
                 break;
             } else {

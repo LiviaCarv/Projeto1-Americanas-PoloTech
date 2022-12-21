@@ -7,8 +7,8 @@ public class Tweet {
     String data_hora;
     String user;
 
-    public static String tweet (Tweet object) {
-        return String.format("[%s] @%s: %s", object.data_hora, object.user, object.mensagem);
+    public String tweet () {
+        return String.format("[%s] @%s: %s", this.data_hora, this.user, this.mensagem);
     }
 
 }
